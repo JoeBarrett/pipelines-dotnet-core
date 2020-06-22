@@ -12,6 +12,7 @@ namespace pipelines_dotnet_core.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.ServeTime=DateTime.Now.ToLongTimeString();
             return View();
         }
 
